@@ -1,0 +1,15 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Ignore PyCharm project folder
+.idea/
+# Python cache
+__pycache__/
+*.pyc
+# Ignore CSV score file if not needed in repo
+pt_scores.csv
