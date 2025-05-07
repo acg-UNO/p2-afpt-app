@@ -49,7 +49,11 @@ class Logic(QMainWindow, Ui_MainWindow):
             writer = csv.writer(file)
             writer.writerow([dod_id, final_score])
 
-            self.input_dodid.clear()  # Resets the ID field after recording data to csv.
+        # Success feedback
+        self.label_validation.setText("Score saved to file.")
+        self.label_validation.setStyleSheet("color: green;")
+
+        self.input_dodid.clear()  # Resets the ID field after recording data to csv.
 
     def score_pushups(self, pushups: int) -> float:
         """
